@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио - Барс Тим</title>
+  <link rel="stylesheet" href="project.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Навигация -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Барс Тим</div>
+      <nav class="nav" id="navMenu">
+        <a href="main.html">Главная</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Введение -->
+  <section class="intro section-fade-in" id="intro">
+    <div class="container intro-grid">
+      <div class="intro-img">
+        <img src="https://sun9-27.userapi.com/s/v1/ig2/0ccWCV3jARQBd_12JND3uZdVeWx_usxNH-Z1tRBnTWUImV7RoZ_BBp6bMNQ9uQeyLe_4OzRp5sVzH_5urnNccRZC.jpg?size=400x400&quality=96&crop=263,100,913,913&ava=1" alt="Фото Тима">
+      </div>
+      <div class="intro-text">
+        <h1>Привет, я Барс Тим</h1>
+        <p>Начинающий веб-разработчик. Увлекаюсь созданием удобных сайтов и учусь современным технологиям: AI, JS,
+          API.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Проекты -->
+  <section class="projects-section section-fade-in" id="projects">
+    <div class="container">
+      <h2>Мои проекты</h2>
+      <p>Избранные работы из моего портфолио</p>
+      <div class="swiper projectSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://avatars.mds.yandex.net/i?id=df8b16da8aae50f67815afbbc55cbae9_l-6430644-images-thumbs&n=13"
+              alt="Проект 1">
+            <div class="project-info">
+              <h3>Дизайн системы для банка</h3>
+              <p>UX/UI, Дизайн-система</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://i01.fotocdn.net/s214/6d374c44c7edefdd/public_pin_l/2880633624.jpg"
+              alt="Проект 2">
+            <div class="project-info">
+              <h3>Редизайн корпоративного сайта</h3>
+              <p>Веб-дизайн, UX/UI, Frontend</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://www.deskera.com/blog/content/images/2023/01/2-14.png"
+              alt="Проект 3">
+            <div class="project-info">
+              <h3>Редизайн корпоративного сайта</h3>
+              <p>Веб-дизайн, UX/UI, Frontend</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_675c90913790960123089adb_675c91af948dcf7a9e93060d/scale_1200"
+              alt="Проект 4">
+            <div class="project-info">
+              <h3>Мобильное приложение для фитнеса</h3>
+              <p>Мобильный дизайн, UX/UI</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Навыки -->
+  <section class="skills-section section-fade-in" id="skills">
+    <div class="container">
+      <h2>Навыки</h2>
+      <div class="skills">
+        <div class="skill">
+          <p>HTML/CSS</p>
+          <div class="progress-bar">
+            <div class="progress" style="--target-width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="progress-bar">
+            <div class="progress" style="--target-width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>AI</p>
+          <div class="progress-bar">
+            <div class="progress" style="--target-width: 85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="testimonials-section section-fade-in" id="testimonials">
+    <div class="container">
+      <h2>Отзывы</h2>
+      <div class="swiper testimonialSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>"Тим быстро и качественно сверстал страницу. Рекомендую!"</p>
+            <strong>— Алексей, заказчик</strong>
+          </div>
+          <div class="swiper-slide">
+            <p>"Очень ответственный и внимательный к деталям разработчик."</p>
+            <strong>— Марина, дизайнер</strong>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="contact-section section-fade-in">
+
+    <div class="contact-form">
+       <a href="/contact.html"><button type="submit">Отправить сообщение</button></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Барс Тим. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="project.js"></script>
+</body>
+
+</html>
