@@ -1,0 +1,266 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6fb;
+    color: #2c2c2c;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Навигация */
+  .header {
+    background: #4a6fa5;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  .nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .nav a:hover {
+    color: #ffd369;
+  }
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+  
+  /* Intro */
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 0;
+  }
+  .intro-img img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  .intro-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  /* Проекты */
+  .projects-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  .projects-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .projects-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  .projectSwiper .swiper-slide {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  .projectSwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    filter: brightness(0.85);
+  }
+  .project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.788), transparent);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+  }
+  .project-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .project-info p {
+    font-size: 14px;
+    color: #ccc;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: orange;
+  }
+  
+  /* Навыки */
+  .skills-section {
+    padding: 60px 0;
+  }
+  .skill {
+    margin-bottom: 20px;
+  }
+  .progress-bar {
+    background: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 5px;
+    position: relative;
+  }
+  .progress {
+    background: #3f5df7;
+    height: 100%;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+  }
+  .progress-bar.animate .progress {
+    width: var(--target-width);
+  }
+  
+  /* Отзывы */
+  .testimonials-section {
+    padding: 60px 0;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  .testimonials-section .swiper-slide {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    font-style: italic;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Контакты */
+  .contact-section {
+    padding: 60px 0;
+  }
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  .contact-info {
+    flex: 1;
+    font-size: 16px;
+  }
+  .contact-item {
+    margin-bottom: 15px;
+  }
+  .contact-social a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: orange;
+  }
+  .contact-form {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  .contact-form button {
+    background: orange;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #4a6fa5;
+    color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Анимации */
+  .section-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  .section-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Адаптив */
+  @media (max-width: 768px) {
+    .intro-grid, .contact-container {
+      display: block;
+      text-align: center;
+    }
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #4a6fa5;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .nav.active {
+      display: flex;
+    }
+    .burger {
+      display: flex;
+    }
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
