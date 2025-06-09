@@ -1,0 +1,86 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6fb;
+    color: #2c2c2c;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Навигация */
+  .header {
+    background: #4a6fa5;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  .nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .nav a:hover {
+    color: #ffd369;
+  }
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+ 
+  /* Адаптация */
+  @media (max-width: 768px) {
+    .intro-grid, .contact-container {
+      display: block;
+      text-align: center;
+    }
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #4a6fa5;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .nav.active {
+      display: flex;
+    }
+    .burger {
+      display: flex;
+    }
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
