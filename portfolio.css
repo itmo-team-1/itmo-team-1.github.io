@@ -1,0 +1,254 @@
+.portfolio-hero {
+    background: linear-gradient(135deg, #4a6fa5 0%, #6b8eba 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.portfolio-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.featured-projects {
+    padding: 60px 0;
+    background-color: #f4f6fb;
+}
+
+.featured-projects h2,
+.all-projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: #333;
+    position: relative;
+}
+
+.featured-projects h2:after,
+.all-projects h2:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #4a6fa5;
+    margin: 15px auto 0;
+}
+
+.swiper {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #4a6fa5;
+}
+
+.swiper-pagination-bullet-active {
+    background: #4a6fa5;
+}
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.client-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.client-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.client-profile h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.client-profile p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.tech-stack {
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.tech-stack h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.tech-stack ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+}
+
+.tech-stack li {
+    background: #f0f4f8;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #4a6fa5;
+}
+
+.all-projects {
+    padding: 60px 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width: 1024px) {
+    .portfolio-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-hero p {
+        font-size: 1.1rem;
+    }
+
+    .featured-projects h2,
+    .all-projects h2 {
+        font-size: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-hero {
+        padding: 60px 0;
+    }
+
+    .portfolio-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .featured-projects,
+    .all-projects {
+        padding: 50px 0;
+    }
+
+    .featured-projects h2,
+    .all-projects h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .project-info h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-hero {
+        padding: 40px 0;
+    }
+
+    .portfolio-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-hero p {
+        font-size: 1rem;
+    }
+
+    .featured-projects,
+    .all-projects {
+        padding: 40px 0;
+    }
+
+    .featured-projects h2,
+    .all-projects h2 {
+        font-size: 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .project-image {
+        height: 180px;
+    }
+
+    .client-profile img {
+        width: 40px;
+        height: 40px;
+    }
+}
