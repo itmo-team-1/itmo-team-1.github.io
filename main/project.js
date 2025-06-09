@@ -60,13 +60,3 @@ new Swiper('.projectSwiper', {
     navMenu.classList.toggle('active');
   });
   
-  // Обработка формы
-  const form = document.querySelector('.contact-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Спасибо! Ваше сообщение отправлено.');
-      form.reset();
-    });
-  }
-  
